@@ -50,7 +50,7 @@ scope: ['profile', 'email']
 }));
 
 app.get('auth/google/callback',
-    passport.autenticate('google', {
+    passport.authenticate('google', {
       succesRedirect: '/logged',
       failureRedirect: '/'
     }));
