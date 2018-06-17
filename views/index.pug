@@ -2,8 +2,69 @@ doctype html
 html
     head
         title The login page
+        style(type='text/css').
+            * {
+              box-sizing: border-box;
+            }
+
+            body {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: #d9f2e6
+            }
+            .description {
+              background-color: #9ec7b3;
+              padding: 17.5px;
+              margin: 50px;
+              font-size: 35px;
+              font-weight: 700;
+              color:  #012212;
+              text-transform: capitalize;
+             }
+
+             .descrption_paragraph {
+                margin: 50px;
+               font-size: 20px;
+               font-weight: 600;
+               text-shadow: 1px 1px  #1a4c34;
+               color: #cc0066;
+             }
+
+            .description_button {
+              margin: 50px;
+              width: 120px;
+              height: 40px;
+              padding: 10px;
+              text-align: center;
+              background-color: #9ec7b3;
+              color:  #012212;
+              font-size: 18px;
+              font-weight: 800;
+              border-radius: 10px;
+              transition: 1s linear;
+              cursor: pointer;
+            }
+            .description_button a {
+              text-decoration: none;
+              color: #012212;
+            }
+            .description_button a:hover {
+              text-decoration: none;
+              color: #9ec7b3;
+            }
+            .description_button:hover {
+              color: #9ec7b3;
+              background-color: #012212;
+            }
+            .description_button a:visited {
+              text-shadow: 1px 1px  #1a4c34;
+              color: #cc0066;
+            }
+
     body
         h1.description#app The login page
         p.descrption_paragraph Welcome on the login page.
-        div.description_button(width="100",height="50")
-            a(href=/auth/google).description_button-link Login
+        div.description_button
+            a(href='/auth/google').description_button-link Login
