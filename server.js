@@ -44,14 +44,14 @@ app.get('/logged', function(req, res) {
 
 //Passport routes
 
-app.get('auth/google',
+app.get('/auth/google',
 passport.authenticate('google', {
 scope: ['profile', 'email']
 }));
 
-app.get('auth/google/callback',
+app.get('/auth/google/callback',
     passport.authenticate('google', {
-      succesRedirect: '/logged',
+      successRedirect: '/logged',
       failureRedirect: '/'
     }));
 
