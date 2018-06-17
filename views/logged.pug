@@ -2,7 +2,35 @@ doctype html
 html
     head
         title User page
+        style(type='text/css').
+            * {
+              box-sizing: border-box;
+            }
+
+            body {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: #d9f2e6
+            }
+            .description {
+              background-color: #9ec7b3;
+              padding: 17.5px;
+              margin: 50px;
+              font-size: 35px;
+              font-weight: 700;
+              color: #012212;
+              text-transform: capitalize;
+            }
+
+            .descrption_paragraph {
+               margin: 50px;
+               font-size: 20px;
+               color: #cc0066;
+               font-weight: 600;
+               text-shadow: 1px 1px  #1a4c34;
+            }
     body
-        h1.description#app User page
+        h1.description#app User's page
         p.descrption_paragraph Welcome on the user page.
-  
